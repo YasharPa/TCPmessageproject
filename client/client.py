@@ -3,7 +3,6 @@ import threading
 
 ADDRESS = "127.0.0.1"
 PORT = 42069
-clients = {}
 
 
 def start_client():
@@ -13,15 +12,17 @@ def start_client():
     thread = threading.Thread(target=get_messages, args=(client_socket,))
     thread.start()
 
-
     while True:
         message = input(":>> ")
         client_socket.send(message.encode('utf-8'))
 
-def get_messages(server_socket):
+def get_messages(client_socket):
     try:
+        data_from_server = client_socket.recv(1024).decode('utf-8')
+        print(data_from_server)
+    
         while True:
-            data = server_socket.recv(1024)
+            data = client_socket.recv(1024)
             if not data:
                 break
             decoded_message =  data.decode('utf-8')
@@ -35,4 +36,3 @@ def get_messages(server_socket):
 
 if __name__ == "__main__":
     start_client()
-    
