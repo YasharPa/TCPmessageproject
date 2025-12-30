@@ -127,7 +127,7 @@ class ChatClient(ctk.CTk):
 
                 # 4. הודעות מערכת אחרות
                 else:
-                    self.append_to_chat("System", message)
+                    self.append_to_chat("Server", message)
 
             except Exception as e:
                 print(f"Error receiving: {e}")
@@ -135,18 +135,15 @@ class ChatClient(ctk.CTk):
                 break
 
     def update_sidebar_users(self, users):
-        """מוחקת את הכפתורים הישנים ויוצרת חדשים"""
-        # ניקוי הרשימה הקיימת
         for widget in self.users_scrollable_frame.winfo_children():
             widget.destroy()
 
-        # יצירת כפתור לכל משתמש
         for user in users:
-            if user != self.username: # לא להציג את עצמי
+            if user != self.username:
                 btn = ctk.CTkButton(
                     self.users_scrollable_frame, 
                     text=user,
-                    command=lambda u=user: self.select_user(u), # שימוש ב-lambda לשמירת השם
+                    command=lambda u=user: self.select_user(u),
                     fg_color="transparent", 
                     border_width=2,
                     text_color=("gray10", "#DCE4EE")
@@ -154,7 +151,7 @@ class ChatClient(ctk.CTk):
                 btn.pack(pady=5, padx=5, fill="x")
 
     def select_user(self, user):
-        """פונקציה שמופעלת כשלוחצים על שם ברשימה"""
+        
         self.target_user = user
         self.target_label.configure(text=f"Chatting with: {user}", text_color="#3B8ED0")
         print(f"Selected: {user}")
@@ -182,14 +179,13 @@ class ChatClient(ctk.CTk):
             messagebox.showerror("Error", f"Failed to send: {e}")
 
     def append_to_chat(self, sender, message):
-        """הוספת טקסט לחלון הצ'אט"""
         self.chat_display.configure(state="normal")
-        self.chat_display.insert("end", f"[{sender}]: {message}\n")
-        self.chat_display.see("end") # גלילה אוטומטית למטה
+        self.chat_display.insert("end", f"{sender}: {message}\n")
+        self.chat_display.see("end") 
         self.chat_display.configure(state="disabled")
 
     def on_closing(self):
-        """סגירה מסודרת"""
+        
         self.running = False
         if self.client_socket:
             self.client_socket.close()
