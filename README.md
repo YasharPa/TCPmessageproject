@@ -79,10 +79,12 @@ py ./server.py
 3. הריצו את הפקודה:
 
 ```bash
+cd TCPmessageproject
 python client.py
 ```
 אם הפקודה הזו לא עובדת/מריצה, נסה את השורה הבאה:
 ```bash
+cd TCPmessageproject
 py ./client.py
 ```
 **שימוש:**
