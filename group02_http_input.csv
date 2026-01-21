@@ -1,0 +1,301 @@
+app_protocol,src_port,dst_port,message,timestamp
+,,,,
+HTTP,51234,80,GET /index.html HTTP/1.1,09/12/2025
+,,,,
+HTTP,51235,80,Response 200 OK Content-Length: 1024,09/12/2025
+,,,,
+HTTP,51236,8080,POST /api/login,09/12/2025
+,,,,
+HTTP,51237,80,Response 302 Found Location: /home,09/12/2025
+,,,,
+HTTP,51238,80,GET /styles/main.css,09/12/2025
+,,,,
+HTTP,51239,80,Response 200 OK Content-Type: text/css,09/12/2025
+,,,,
+HTTP,51240,80,GET /images/logo.png,09/12/2025
+,,,,
+HTTP,51241,80,Response 200 OK Content-Type: image/png,09/12/2025
+,,,,
+HTTP,51242,8080,GET /user/profile/123,09/12/2025
+,,,,
+HTTP,51243,8080,Response 200 OK application/json,09/12/2025
+,,,,
+HTTP,51244,80,GET /favicon.ico,09/12/2025
+,,,,
+HTTP,51245,80,Response 404 Not Found,09/12/2025
+,,,,
+HTTP,51246,80,POST /data/submit,09/12/2025
+,,,,
+HTTP,51247,80,Response 201 Created,09/12/2025
+,,,,
+HTTP,51248,80,GET /about/team,09/12/2025
+,,,,
+HTTP,51249,80,Response 200 OK,09/12/2025
+,,,,
+HTTP,51250,80,GET /robots.txt,09/12/2025
+,,,,
+HTTP,51251,80,Response 200 OK Allow: /,09/12/2025
+,,,,
+HTTP,51252,8080,PUT /resources/456,09/12/2025
+,,,,
+HTTP,51253,8080,Response 204 No Content,09/12/2025
+,,,,
+HTTP,51254,80,GET /videos/clip.mp4,09/12/2025
+,,,,
+HTTP,51255,80,Response 206 Partial Content,09/12/2025
+,,,,
+HTTP,51256,80,GET /settings/user,09/12/2025
+,,,,
+HTTP,51257,80,Response 200 OK,09/12/2025
+,,,,
+HTTP,51258,8080,DELETE /temp/oldfile,09/12/2025
+,,,,
+HTTP,51259,8080,Response 200 OK,09/12/2025
+,,,,
+HTTP,51260,80,GET /blog/post-101,09/12/2025
+,,,,
+HTTP,51261,80,Response 200 OK,09/12/2025
+,,,,
+HTTP,51262,80,POST /comments/add,09/12/2025
+,,,,
+HTTP,51263,80,Response 200 OK,09/12/2025
+,,,,
+HTTP,51264,8080,GET /monitoring/health,09/12/2025
+,,,,
+HTTP,51265,8080,Response 200 OK,09/12/2025
+,,,,
+HTTP,51266,80,GET /data/feed,09/12/2025
+,,,,
+HTTP,51267,80,Response 200 OK,09/12/2025
+,,,,
+HTTP,51268,80,POST /purchase/item/a1b2,09/12/2025
+,,,,
+HTTP,51269,80,Response 200 OK,09/12/2025
+,,,,
+HTTP,51270,80,GET /terms-of-service,09/12/2025
+,,,,
+HTTP,51271,80,Response 200 OK,09/12/2025
+,,,,
+HTTP,51272,8080,OPTIONS *,09/12/2025
+,,,,
+HTTP,51273,8080,"Response 200 OK Allow: GET, POST, OPTIONS",09/12/2025
+,,,,
+HTTP,51274,80,GET /docs/guide.pdf,09/12/2025
+,,,,
+HTTP,51275,80,Response 200 OK Content-Type: application/pdf,09/12/2025
+,,,,
+HTTP,51276,80,POST /search/query,09/12/2025
+,,,,
+HTTP,51277,80,Response 200 OK,09/12/2025
+,,,,
+HTTP,51278,80,GET /user/avatar.jpg,09/12/2025
+,,,,
+HTTP,51279,80,Response 200 OK,09/12/2025
+,,,,
+HTTP,51280,8080,GET /error-page?code=500,09/12/2025
+,,,,
+HTTP,51281,8080,Response 500 Internal Server Error,09/12/2025
+,,,,
+HTTP,51282,80,GET /manifest.json,09/12/2025
+,,,,
+HTTP,51283,80,Response 200 OK,09/12/2025
+,,,,
+HTTP,51284,80,POST /checkout/process,09/12/2025
+,,,,
+HTTP,51285,80,Response 200 OK,09/12/2025
+,,,,
+HTTP,51286,8080,GET /admin/stats,09/12/2025
+,,,,
+HTTP,51287,8080,Response 401 Unauthorized,09/12/2025
+,,,,
+HTTP,51288,80,GET /contact-us,09/12/2025
+,,,,
+HTTP,51289,80,Response 200 OK,09/12/2025
+,,,,
+HTTP,51290,80,GET /sitemap.xml,09/12/2025
+,,,,
+HTTP,51291,80,Response 200 OK Content-Type: application/xml,09/12/2025
+,,,,
+HTTP,51292,8080,PUT /config/setting/a,09/12/2025
+,,,,
+HTTP,51293,8080,Response 200 OK,09/12/2025
+,,,,
+HTTP,51294,80,GET /widgets/ad.js,09/12/2025
+,,,,
+HTTP,51295,80,Response 200 OK application/javascript,09/12/2025
+,,,,
+HTTP,51296,80,GET /data/live/update,09/12/2025
+,,,,
+HTTP,51297,80,Response 200 OK,09/12/2025
+,,,,
+HTTP,51298,80,POST /user/logout,09/12/2025
+,,,,
+HTTP,51299,80,Response 303 See Other Location: /,09/12/2025
+,,,,
+HTTP,51300,8080,GET /status/database,09/12/2025
+,,,,
+HTTP,51301,8080,Response 200 OK,09/12/2025
+,,,,
+HTTP,51302,80,GET /old-page,09/12/2025
+,,,,
+HTTP,51303,80,Response 301 Moved Permanently,09/12/2025
+,,,,
+HTTP,51304,80,GET /new-resource,09/12/2025
+,,,,
+HTTP,51305,80,Response 200 OK,09/12/2025
+,,,,
+HTTP,51306,8080,DELETE /logs/temp/123,09/12/2025
+,,,,
+HTTP,51307,8080,Response 204 No Content,09/12/2025
+,,,,
+HTTP,51308,80,GET /data/large-file.bin,09/12/2025
+,,,,
+HTTP,51309,80,Response 200 OK Content-Length: 500000,09/12/2025
+,,,,
+HTTP,51310,80,POST /feedback,09/12/2025
+,,,,
+HTTP,51311,80,Response 200 OK,09/12/2025
+,,,,
+HTTP,51312,8080,GET /cache/key/recent,09/12/2025
+,,,,
+HTTP,51313,8080,Response 200 OK,09/12/2025
+,,,,
+HTTP,51314,80,GET /css/font.woff2,09/12/2025
+,,,,
+HTTP,51315,80,Response 200 OK application/font-woff2,09/12/2025
+,,,,
+HTTP,51316,80,GET /api/v2/items,09/12/2025
+,,,,
+HTTP,51317,80,Response 200 OK,09/12/2025
+,,,,
+HTTP,51318,80,POST /user/update,09/12/2025
+,,,,
+HTTP,51319,80,Response 200 OK,09/12/2025
+,,,,
+HTTP,51320,8080,GET /test/ping,09/12/2025
+,,,,
+HTTP,51321,8080,Response 200 OK Pong,09/12/2025
+,,,,
+HTTP,51322,80,GET /error-log.txt,09/12/2025
+,,,,
+HTTP,51323,80,Response 403 Forbidden,09/12/2025
+,,,,
+HTTP,51324,80,GET /help/faq,09/12/2025
+,,,,
+HTTP,51325,80,Response 200 OK,09/12/2025
+,,,,
+HTTP,51326,80,POST /data/upload,09/12/2025
+,,,,
+HTTP,51327,80,Response 200 OK,09/12/2025
+,,,,
+HTTP,51328,8080,GET /auth/token/refresh,09/12/2025
+,,,,
+HTTP,51329,8080,Response 200 OK,09/12/2025
+,,,,
+HTTP,51330,80,GET /sitemap/images.xml,09/12/2025
+,,,,
+HTTP,51331,80,Response 200 OK application/xml,09/12/2025
+,,,,
+HTTP,51332,80,POST /session/start,09/12/2025
+,,,,
+HTTP,51333,80,Response 200 OK Set-Cookie: SID,09/12/2025
+,,,,
+HTTP,51334,8080,GET /external/data?id=1,09/12/2025
+,,,,
+HTTP,51335,8080,Response 200 OK,09/12/2025
+,,,,
+HTTP,51336,80,GET /products/list,09/12/2025
+,,,,
+HTTP,51337,80,Response 200 OK,09/12/2025
+,,,,
+HTTP,51338,80,POST /cart/add,09/12/2025
+,,,,
+HTTP,51339,80,Response 200 OK,09/12/2025
+,,,,
+HTTP,51340,8080,HEAD /status/check,09/12/2025
+,,,,
+HTTP,51341,8080,Response 200 OK Content-Length: 0,09/12/2025
+,,,,
+HTTP,51342,80,GET /downloads/app.exe,09/12/2025
+,,,,
+HTTP,51343,80,Response 200 OK application/octet-stream,09/12/2025
+,,,,
+HTTP,51344,80,POST /log/event,09/12/2025
+,,,,
+HTTP,51345,80,Response 200 OK,09/12/2025
+,,,,
+HTTP,51346,8080,GET /dashboard/metrics,09/12/2025
+,,,,
+HTTP,51347,8080,Response 200 OK,09/12/2025
+,,,,
+HTTP,51348,80,GET /user/notifications,09/12/2025
+,,,,
+HTTP,51349,80,Response 200 OK,09/12/2025
+,,,,
+HTTP,51350,80,DELETE /user/session/expired,09/12/2025
+,,,,
+HTTP,51351,80,Response 204 No Content,09/12/2025
+,,,,
+HTTP,51352,8080,GET /api/v1/healthcheck,09/12/2025
+,,,,
+HTTP,51353,8080,Response 200 OK,09/12/2025
+,,,,
+HTTP,51354,80,GET /widgets/menu.html,09/12/2025
+,,,,
+HTTP,51355,80,Response 200 OK text/html,09/12/2025
+,,,,
+HTTP,51356,80,POST /update/preferences,09/12/2025
+,,,,
+HTTP,51357,80,Response 200 OK,09/12/2025
+,,,,
+HTTP,51358,8080,GET /resources/image_b.jpg,09/12/2025
+,,,,
+HTTP,51359,8080,Response 200 OK image/jpeg,09/12/2025
+,,,,
+HTTP,51360,80,GET /api/data/stream,09/12/2025
+,,,,
+HTTP,51361,80,Response 200 OK,09/12/2025
+,,,,
+HTTP,51362,80,POST /transaction/confirm,09/12/2025
+,,,,
+HTTP,51363,80,Response 200 OK,09/12/2025
+,,,,
+HTTP,51364,8080,GET /backup/latest.zip,09/12/2025
+,,,,
+HTTP,51365,8080,Response 403 Forbidden,09/12/2025
+,,,,
+HTTP,51366,80,GET /Sitemap,09/12/2025
+,,,,
+HTTP,51367,80,Response 404 Not Found,09/12/2025
+,,,,
+HTTP,51368,80,POST /rating/submit,09/12/2025
+,,,,
+HTTP,51369,80,Response 200 OK,09/12/2025
+,,,,
+HTTP,51370,8080,GET /status/memory,09/12/2025
+,,,,
+HTTP,51371,8080,Response 200 OK,09/12/2025
+,,,,
+HTTP,51372,80,GET /asset/script.min.js,09/12/2025
+,,,,
+HTTP,51373,80,Response 200 OK,09/12/2025
+,,,,
+HTTP,51374,80,POST /contact/send-email,09/12/2025
+,,,,
+HTTP,51375,80,Response 202 Accepted,09/12/2025
+,,,,
+HTTP,51376,8080,GET /report/daily,09/12/2025
+,,,,
+HTTP,51377,8080,Response 200 OK,09/12/2025
+,,,,
+HTTP,51378,80,GET /users/list/all,09/12/2025
+,,,,
+HTTP,51379,80,Response 200 OK,09/12/2025
+,,,,
+HTTP,51380,80,POST /api/endpoint,09/12/2025
+,,,,
+HTTP,51381,80,Response 200 OK,09/12/2025
+,,,,
+HTTP,51382,8080,GET /static/data.csv,09/12/2025
+,,,,
+HTTP,51383,8080,Response 200 OK text/csv,09/12/2025
